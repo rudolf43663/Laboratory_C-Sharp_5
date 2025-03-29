@@ -59,8 +59,10 @@ public class TextCorrector
   {
     return Regex.Replace(text, PhoneNumberPattern, PhoneNumberReplacement);
   }
+}
 
-  public static void Main(string[] args)
+class Program{
+  public static void Main()
   {
     Console.WriteLine("Введите путь к директории с текстовыми файлами:");
     string directoryPath = Console.ReadLine();
